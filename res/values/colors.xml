@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ActionBar_background">#528B8B</color>
+    <color name="ActionBar_text">#D8D8BF</color>
+    <color name="info_text">#388E8E</color>
+    <color name="info_text_label">#B4CDCD</color>
+</resources>

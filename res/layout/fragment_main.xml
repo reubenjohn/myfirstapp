@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="?attr/actionBarSize" >
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/Button1"
+        android:hint="@string/edit_message" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="sendMessage"
+        android:text="@string/button_send" />
+
+    <TextView
+        android:id="@+id/API_usage_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/API_usage"
+        android:text="@string/API_usage_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/info_text_label" />
+
+    <TextView
+        android:id="@+id/API_usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/API_usage"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/info_text" />
+
+</RelativeLayout>
